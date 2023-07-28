@@ -9,12 +9,16 @@ body{
 }
 main{
   display: flex;
-  justify-content: center;
+  
+  flex-direction: column;
+  align-items: center;
 }
 .containers{
   background: #FFF; 
   width: 870px;
   padding: 30px;
+  margin-top: 21px;
+  border-radius: 5px;
 }
 
 /* top players styles */
@@ -46,9 +50,16 @@ main{
   font-size: 18px; 
 }
 hr{
-  border: 1px solid  #D1D1D1; ;
+  border: 1px solid  #D1D1D1; 
+  margin-bottom: 27px;
 }
 /* top blogs styles */
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-row-gap: 26px;
+}
+
 .blog .thambnil img{
   width: 224px;
 height: 127px; 
@@ -72,7 +83,30 @@ height: 127px;
   font-size: 16px;
   color: #562EFF;
 }
-.blogs{
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
+/* course style */
+.course .course-banner img{
+  width: 266px;
+height: 141px; 
 }
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 24px;
+  
+}
+.course-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star{
+  font-size: 12px;
+}
+.fa-star.filled{
+  color: #FFC014;
+}
+.fa-star.empty{
+  color: #AEAEAE;
+}
+
+
